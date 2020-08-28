@@ -1,0 +1,9 @@
+// Functions
+
+// rem-calc function allows you to turn a pixel value into a rem value
+// https://gist.github.com/olefredrik/e2e5822013c2a027e3b57cf21c8f4a48
+@function rem-calc($size) {
+  $remSize: $size / 16;
+
+  @return #{$remSize}rem;
+}

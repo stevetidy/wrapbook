@@ -1,0 +1,15 @@
+body,
+html {
+  min-height: 100vh;
+  background: #e5e5e5;
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.visuallyhidden {
+  @include visuallyhidden();
+}
+
+.hide {
+  display: none !important;
+}

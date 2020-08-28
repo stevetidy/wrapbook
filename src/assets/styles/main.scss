@@ -1,21 +1,3 @@
-// Basics ------------------------------------------------------ //
-@import 'functions';
-@import 'vars';
-@import 'mixins';
-
-// Modules ----------------------------------------------------- //
-@import '../../../node_modules/normalize.css/normalize';
-@import '../../../node_modules/basicgrid/src/styles/main';
-
-// Styles ------------------------------------------------------ //
-@import 'html';
-@import 'body';
-@import 'typography';
-@import 'img';
-@import 'table';
-@import 'hr';
-@import 'spacing';
-@import 'background';
-@import 'color';
-@import 'button';
-@import 'align';
+@import './utils/utils';
+@import "./base/base";
+@import "./components/components";

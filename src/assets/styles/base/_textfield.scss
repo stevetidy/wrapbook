@@ -1,0 +1,16 @@
+.textfield {
+  background: #f7f7fa;
+  border: 1px solid #f7f7fa;
+  border-radius: 12px;
+  width: 100%;
+  display: inline-block;
+  color: #555555;
+  height: 48px;
+  border: 0;
+  padding: 0 16px;
+  outline: 0;
+
+  &--active {
+    border: 1px solid #b4e2a9;
+  }
+}

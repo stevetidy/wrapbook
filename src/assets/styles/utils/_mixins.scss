@@ -1,0 +1,48 @@
+// Mixins
+
+// Modified from: https://glennmccomb.com/articles/useful-sass-scss-media-query-mixins-for-bootstrap/
+// I allowed the ability to pass any value as a breakpoint rather than having a mapped variable.
+// This makes the mixins much simpler.
+
+// Respond Above
+// Usage: @include respond-above(400) {}
+@mixin respond-above($breakpoint) {
+
+  // Write the media query.
+  @media (min-width: rem-calc($breakpoint)) {
+    @content;
+  }
+}
+
+// Respond Below
+// Usage: @include respond-below(800) {}
+@mixin respond-below($breakpoint) {
+
+  // Write the media query.
+  @media (max-width: rem-calc($breakpoint - 1)) {
+    @content;
+  }
+}
+
+// Respond Between
+// @include respond-between(800, 1100) {}
+@mixin respond-between($lower, $upper) {
+
+  // Write the media query.
+  @media (min-width: rem-calc($lower)) and (max-width: rem-calc(($upper - 1))) {
+    @content;
+  }
+}
+
+// Taken from: https://a11yproject.com/posts/how-to-hide-content/
+@mixin visuallyhidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;  
+}

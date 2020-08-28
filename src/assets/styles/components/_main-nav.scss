@@ -1,0 +1,38 @@
+.main-nav {
+  display: flex;
+
+  &__menu {
+    &:focus,
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+
+    @include respond-above(768) {
+      display: none;
+    }
+  }
+
+  &__list {
+    display: none;
+    align-items: center;
+
+    @include respond-above(768) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    margin-left: 16px;
+  }
+
+  &__signup {
+    display: block;
+    background: #ffffff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 16px;
+  }
+}
