@@ -6,6 +6,7 @@
   max-width: 1035px;
   margin: 0 auto;
   padding: 0 16px;
+  position: relative;
 
   @include respond-above(1040) {
     padding: 0;

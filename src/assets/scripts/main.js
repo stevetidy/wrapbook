@@ -135,8 +135,13 @@
 
   function mobileNav() {
     const menuBtn = document.querySelector('.main-nav__menu');
+    const bodyElm = document.body;
     menuBtn.addEventListener('click', () => {
-      alert('Show mobile nav');
+      if (bodyElm.classList.contains('menu-open')) {
+        bodyElm.classList.remove('menu-open');
+      } else {
+        bodyElm.classList.add('menu-open');
+      }
     });
   }
 

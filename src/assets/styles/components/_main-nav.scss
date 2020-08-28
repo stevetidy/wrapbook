@@ -14,25 +14,50 @@
   }
 
   &__list {
-    display: none;
     align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #e5e5e5;
+    padding-bottom: 8px;
+    display: none;
 
     @include respond-above(768) {
       display: flex;
+      padding-bottom: 0;
+      position: static;
+    }
+
+    .menu-open & {
+      display: block;
+      border-bottom: 1px solid #666666;
+
+      @include respond-above(768) {
+        display: flex;
+        border-bottom: 0;
+      }
     }
   }
 
   &__item {
     margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+
+    @include respond-above(768) {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
   }
 
   &__signup {
-    display: block;
     background: #ffffff;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
     height: 35px;
     line-height: 35px;
     padding: 0 16px;
+    display: inline-block;
   }
 }
