@@ -6,6 +6,7 @@
     document.querySelector('.main-nav__item--logout').classList.remove('hide');
     document.querySelector('.logged-in-content').classList.remove('hide');
     inviteNewUser();
+    logout();
   }
 
   // Fetch the users.
@@ -74,6 +75,7 @@
     const loginSubmit = loginComponent.querySelector('.login__submit');
     const email = document.getElementById('email');
     const password = document.getElementById('password');
+    email.focus();
 
     // Validate email
     email.addEventListener('keyup', () => {
@@ -108,6 +110,29 @@
     });
   }
 
+  function logout() {
+    const loginComponent = document.querySelector('.login');
+    const passwordWrap = loginComponent.querySelector('.login__textfield--password');
+    const loginSubmit = loginComponent.querySelector('.login__submit');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const logoutBtn = document.querySelector('[data-logout]');
+
+    logoutBtn.addEventListener('click', () => {
+      document.querySelector('.login').classList.remove('hide');
+      document.querySelector('.main-nav__item--signup').classList.remove('hide');
+      document.querySelector('.main-nav__item--logout').classList.add('hide');
+      document.querySelector('.logged-in-content').classList.add('hide');
+      passwordWrap.classList.add('hide');
+      email.value = '';
+      password.value = '';
+      loginSubmit.classList.remove('button--active');
+      email.classList.remove('textfield--active');
+      password.classList.remove('textfield--active');
+      email.focus();
+    });
+  }
+
   function mobileNav() {
     const menuBtn = document.querySelector('.main-nav__menu');
     menuBtn.addEventListener('click', () => {
@@ -121,5 +146,4 @@
   }
 
   init();
-
 })();
