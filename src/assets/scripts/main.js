@@ -5,6 +5,7 @@
     document.querySelector('.main-nav__item--signup').classList.add('hide');
     document.querySelector('.main-nav__item--logout').classList.remove('hide');
     document.querySelector('.logged-in-content').classList.remove('hide');
+    document.querySelector('.main-content').classList.add('main-content--dashboard');
     inviteNewUser();
     logout();
   }
@@ -79,7 +80,7 @@
 
     // Validate email
     email.addEventListener('keyup', () => {
-      if ( /(.+)@(.+){2,}\.(.+){2,}/.test(email.value)) {
+      if (/(.+)@(.+){2,}\.(.+){2,}/.test(email.value)) {
         email.classList.add('textfield--active');
         passwordWrap.classList.remove('hide');
       } else {
@@ -102,7 +103,7 @@
     loginSubmit.addEventListener('click', (e) => {
       e.preventDefault();
 
-      if(loginSubmit.classList.contains('button--active')) {
+      if (loginSubmit.classList.contains('button--active')) {
         loginComponent.classList.add('hide');
         getUsers();
         showDashboard();
@@ -123,6 +124,7 @@
       document.querySelector('.main-nav__item--signup').classList.remove('hide');
       document.querySelector('.main-nav__item--logout').classList.add('hide');
       document.querySelector('.logged-in-content').classList.add('hide');
+      document.querySelector('.main-content').classList.remove('main-content--dashboard');
       passwordWrap.classList.add('hide');
       email.value = '';
       password.value = '';
