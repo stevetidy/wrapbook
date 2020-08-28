@@ -24,14 +24,14 @@
 
   // Render all users.
   function showUsers(obj) {
-    const markup = document.getElementById('dashboard-users');
-    markup.querySelector('.dashboard__users-loading').classList.add('hide');
-    if (!markup) return;
+    const dashboardUsers = document.getElementById('dashboard-users');
+    dashboardUsers.querySelector('.dashboard__users-loading').classList.add('hide');
+    if (!dashboardUsers) return;
 
     const jsonObj = JSON.parse(obj);
     const collection = jsonObj.collection;
     for (let prop in collection) {
-      markup.innerHTML += `
+      dashboardUsers.innerHTML += `
         <div class="user">
           <a class="user__link" href="/user/${collection[prop].id}">
           <div class="user__media">
