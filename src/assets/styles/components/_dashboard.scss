@@ -1,4 +1,4 @@
-.dashboard {  
+.dashboard {
   @include respond-above(1040) {
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,6 @@
   }
 
   &__aside {
-    display: none;
     text-align: center;
 
     @include respond-above(1040) {

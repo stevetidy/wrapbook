@@ -2,6 +2,11 @@
   padding: 24px;
   background: #fff7ee;
   border-radius: 12px;
+  display: none;
+
+  @include respond-above(1040) {
+    display: block;
+  }
 
   &__img {
     width: 96px;
@@ -39,5 +44,9 @@
     letter-spacing: -0.003em;
     text-decoration-line: underline;
     color: #033fff;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    resize: none;
   }
 }
