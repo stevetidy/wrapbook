@@ -1,0 +1,14 @@
+.page-header {
+  margin-bottom: 24px;
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  &__copy {
+    line-height: 150%;
+  }
+}
