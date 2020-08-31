@@ -144,9 +144,10 @@
 
       &.false {
         &::before {
-          content: "\2715";
+          // content: "\2715";
+          content: "\00D7";
           background-color: red;
-          font-weight: bold;
+          font-size: 24px;
         }
       }
     }
