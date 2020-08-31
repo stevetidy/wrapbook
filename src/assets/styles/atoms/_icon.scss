@@ -7,6 +7,6 @@
   fill: currentColor;
 
   &--expense {
-    margin-right: 4px;
+    margin-right: rem-calc(4);
   }
 }

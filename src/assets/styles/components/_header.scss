@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1035px;
+  max-width: rem-calc(1035);
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 rem-calc(16);
   position: relative;
 
   @include respond-above(1040) {

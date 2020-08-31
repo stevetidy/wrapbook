@@ -4,7 +4,7 @@
   background: #a2a8b7;
   color: #ffffff;
   width: 100%;
-  height: 48px;
+  height: rem-calc(48);
   cursor: pointer;
   transition: background-color 0.25s ease;
   outline: 0;
@@ -23,11 +23,11 @@
   }
 
   &--copy {
-    height: 40px;
-    line-height: 40px;
+    height: rem-calc(40);
+    line-height: rem-calc(40);
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.08);
-    font-size: 14px;
+    font-size: rem-calc(14);
     color: #033fff;
     font-weight: bold;
   }

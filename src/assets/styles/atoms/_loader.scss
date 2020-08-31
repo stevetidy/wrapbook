@@ -2,8 +2,8 @@
   border: 8px solid #ffffff; /* White */
   border-top: 8px solid #033fff; /* Blue */
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: rem-calc(60);
+  height: rem-calc(60);
   animation: spin 0.75s linear infinite;
 }
 

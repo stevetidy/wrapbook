@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px 16px 64px;
+  padding: rem-calc(16) rem-calc(16) rem-calc(64);
 
   @include respond-above(1040) {
-    min-height: calc(100vh - 64px);
-    padding: 16px 0;
+    min-height: calc(100vh - #{rem-calc(64)});
+    padding: rem-calc(16) 0;
   }
 
   &--dashboard {
