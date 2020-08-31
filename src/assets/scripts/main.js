@@ -61,11 +61,15 @@
 
   function inviteNewUser() {
     const inviteBtns = document.querySelectorAll('.button--copy');
-    const inviteLink = document.querySelector('.invite__link-href').href;
+    const inviteLinkText = document.getElementById('invite-link').value;
     inviteBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        alert(`Copied: ${inviteLink}`);
-        navigator.clipboard.writeText(inviteLink);
+        const origInnerHTML = btn.innerHTML;
+        navigator.clipboard.writeText(inviteLinkText);
+        btn.innerHTML = "Link Copied";
+        setTimeout(() => {
+          btn.innerHTML = origInnerHTML;
+        }, 2500);
       });
     });
   }

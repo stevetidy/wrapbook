@@ -27,7 +27,7 @@
       </div>
       <div class="login__textfield login__textfield--password hide">
         <label for="password" class="visuallyhidden">Password</label>
-        <input class="textfield" id="password" type="password" name="email" placeholder="Enter a password">
+        <input class="textfield" autocomplete="false" id="password" type="password" name="email" placeholder="Enter a password">
       </div>
       <button class="login__submit button">Continue to Wrapbook</button>
     </form>
@@ -53,16 +53,15 @@
             <img class="invite__img" src="https://robohash.org/sederroreveniet.png?size=150x150&set=set1" alt="">
           </picture>
           <h2 class="invite__title">Invite people to this project</h2>
-          <p class="invite__copy">Share the following link with your team to have them sign up and send you their
-            invoices.</p>
-          <form>
-            <label class="visuallyhidden" for="invite-link">Invite Link</label>
-            <textarea disabled class="invite__link" name="invite-link" id="invite-link"
-              value="https://wrapbook.com/i/j93kda92">https://wrapbook.com/i/j93kda92</textarea>
-          </form>
+          <p class="invite__copy">Share the following link with your team to have them sign up and send you their invoices.</p>
+          <p><span class="invite__link">https://wrapbook.com/i/j93kda92</span></p>
           <button class="button button--copy">Copy to clipboard</button>
         </div>
         <button class="button button--copy button--invite-mobile">Invite someone to Wrapbook</button>
+        <form class="visuallyhidden">
+          <label for="invite-link">Invite Link</label>
+          <textarea disabled class="invite__link" name="invite-link" id="invite-link" value="https://wrapbook.com/i/j93kda92">https://wrapbook.com/i/j93kda92</textarea>
+        </form>
       </aside>
     </div>
   </div>

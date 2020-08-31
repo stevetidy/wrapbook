@@ -41,12 +41,10 @@
     margin-bottom: rem-calc(24);
     font-size: rem-calc(15);
     line-height: rem-calc(34);
-    // letter-spacing: -0.003em;
     text-decoration-line: underline;
     color: #033fff;
-    border: 0;
-    width: 100%;
     text-align: center;
-    resize: none;
+    display: inline-block;
+    padding: 0 rem-calc(8);
   }
 }
