@@ -1,8 +1,8 @@
 .button {
-  border: 1px solid #a2a8b7;
+  border: 1px solid $buttonDefault;
+  background: $buttonDefault;
   border-radius: 12px;
-  background: #a2a8b7;
-  color: #ffffff;
+  color: $white;
   width: 100%;
   height: rem-calc(48);
   cursor: pointer;
@@ -12,23 +12,23 @@
   // &:focus,
   // &:hover,
   // &:active {
-  //   background: #ffffff;
-  //   color: #a2a8b7;
+  //   background: $white;
+  //   color: $buttonDefault;
   // }
 
   &--active {
-    color: #ffffff;
-    background-color: #0047ff;
-    border-color: #0047ff;
+    color: $white;
+    background-color: $mediumBlue;
+    border-color: $mediumBlue;
   }
 
   &--copy {
     height: rem-calc(40);
     line-height: rem-calc(40);
-    background: #ffffff;
+    background: $white;
     border: 1px solid rgba(0, 0, 0, 0.08);
     font-size: rem-calc(14);
-    color: #033fff;
+    color: $deepBlue;
     font-weight: bold;
   }
 

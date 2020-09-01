@@ -1,10 +1,10 @@
 .textfield {
-  background: #f7f7fa;
-  border: 1px solid #f7f7fa;
   border-radius: 12px;
+  background: $formFieldBackground;
+  border: 1px solid $formFieldBackground;
+  color: $formFieldColor;
   width: 100%;
   display: inline-block;
-  color: #555555;
   height: rem-calc(48);
   border: 0;
   padding: 0 rem-calc(16);

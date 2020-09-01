@@ -1,6 +1,6 @@
 .loader {
-  border: 8px solid #ffffff; /* White */
-  border-top: 8px solid #033fff; /* Blue */
+  border: 8px solid $white;
+  border-top: 8px solid $deepBlue;
   border-radius: 50%;
   width: rem-calc(60);
   height: rem-calc(60);

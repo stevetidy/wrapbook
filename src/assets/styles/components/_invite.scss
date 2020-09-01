@@ -1,6 +1,6 @@
 .invite {
   padding: rem-calc(24);
-  background: #fff7ee;
+  background: $inviteBackground;
   border-radius: 12px;
   display: none;
 
@@ -13,8 +13,8 @@
     height: rem-calc(96);
     display: block;
     border-radius: 50%;
-    background: #ffffff;
-    border: 1px solid #ffffff;
+    background: $white;
+    border: 1px solid $white;
     box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
     margin: 0 auto 24px;
   }
@@ -30,19 +30,19 @@
   &__copy {
     font-size: rem-calc(15);
     line-height: rem-calc(18);
-    color: #979797;
+    color: $mediumGrey;
     margin-bottom: rem-calc(24);
   }
 
   &__link {
     height: 34px;
-    background: #ffffff;
+    background: $white;
     border-radius: 12px;
     margin-bottom: rem-calc(24);
     font-size: rem-calc(15);
     line-height: rem-calc(34);
     text-decoration-line: underline;
-    color: #033fff;
+    color: $deepBlue;
     text-align: center;
     display: inline-block;
     padding: 0 rem-calc(8);

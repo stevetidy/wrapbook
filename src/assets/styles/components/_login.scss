@@ -1,9 +1,9 @@
 .login {
   padding: rem-calc(24);
-  background: #ffffff;
+  background: $white;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  max-width: 500px;
+  max-width: rem-calc(500);
   margin: 0 auto;
 
   &__title {
@@ -17,7 +17,7 @@
   &__copy {
     margin-bottom: rem-calc(24);
     line-height: 1.5;
-    color: #555555;
+    color: $formFieldColor;
   }
 
   &__textfield {
